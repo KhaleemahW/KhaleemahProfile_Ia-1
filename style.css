@@ -1,0 +1,101 @@
+:root {
+    --pink: #f8c8dc;
+    --purple: #cdb4db;
+    --light-pink: #fff0f5;
+    --white: #ffffff;
+    --dark: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--light-pink);
+    color: var(--dark);
+}
+
+header {
+    background-color: var(--pink);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--purple);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: purple;
+    transition: 0.3s;
+}
+
+section {
+    background-color: var(--white);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--purple);
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.mulan-img {
+    width: 200px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+footer {
+    background-color: var(--pink);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+section:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 950px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        width: 40%;
+    }
+}
